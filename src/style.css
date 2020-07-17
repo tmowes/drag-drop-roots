@@ -1,0 +1,91 @@
+html {
+  font-family: 'Roboto';
+}
+
+body {
+  background-color: #21222c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.boards {
+  max-width: 958px;
+  width: 958px;
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 16px;
+}
+
+.board {
+  background: #282a36;
+  border: 1px solid #5ac6ef11;
+  border-radius: 4px;
+  margin: 0 16px;
+  box-shadow: 0 4px 4px -2px #5ac6efcc;
+}
+
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #5ac6efcc;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  min-width: 224px;
+  min-height: 512px;
+}
+
+.card {
+  background-color: #343746;
+  padding: 8px;
+  box-shadow: 0 4px 4px -2px #5ac6efaa;
+  width: 192px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.status {
+  width: 30px;
+  height: 8px;
+  background: gray;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.status.green {
+  background: #23d2ac;
+}
+
+.status.blue {
+  background: #33adff;
+}
+
+.status.red {
+  background: red;
+}
+
+.highlight {
+  background-color: #5ac6ef11;
+}
+
+.card,
+.dropzone {
+  transition: 400ms;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background-color: #4cd13733;
+}
